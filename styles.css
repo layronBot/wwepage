@@ -1,301 +1,309 @@
-/* AQUI VAN LOS ESTILOS GENERALES */
+/* Estilos Generales */
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    overflow-x: hidden;
-    background: #121212; 
-    color: #d9d9d9; 
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  /* Contenedor principal */
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-  
-  /* Cabecera */
-  #main-border {
-    background: #1a1a1a; 
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-    border-bottom: 2px solid #444; 
-  }
-  
-  #logo h1 {
-    font-weight: bold;
-    font-size: 26px;
-    color: #e2b714; 
-    text-transform: uppercase;
-  }
-  
-  #menu {
-    display: flex;
-    gap: 20px;
-  }
-  
-  #menu ul {
-    display: flex;
-    gap: 15px;
-  }
-  
-  #menu ul li {
-    list-style: none;
-  }
-  
-  #menu ul li a {
-    color: #d9d9d9;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  #menu ul li a:hover {
-    color: #e2b714; 
-  }
-  
-  /* Slider */
-  #slider {
-    height: 220px;
-    background: linear-gradient(to right, #333, #555); /* Degradado elegante */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #e2b714;
-    text-align: center;
-  }
-  
-  #slider h2 {
-    font-size: 42px;
-    color: #f3f3f3;
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Subtítulos */
-  .subheader {
-    font-size: 30px;
-    color: #e2b714;
-    text-align: center;
-    margin: 50px 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(226, 183, 20, 0.3);
-  }
-  
-  /* Servicios */
-  .service, .video {
-    width: 30%;
-    text-align: center;
-    float: left;
-    margin: 20px;
-    background: #1e1e1e;
-    padding: 20px;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .service:hover, .video:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-  }
-  
-  .service img {
-    height: 70px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-  }
-  
-  .service img:hover {
-    transform: scale(1.1); /* Efecto de zoom en hover */
-  }
-  
-  .service h3 {
-    color: #e2b714;
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
-  
-  .service p, .video p {
-    color: #bbbbbb;
-    text-align: justify;
-    width: 85%;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-  
-  /* Videos */
-  .video iframe {
-    width: 90%;
-    height: 200px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    border: 2px solid #e2b714;
-  }
-  
-  /* Footer */
-  #footer {
-    background-color: #1a1a1a;
-    color: #d9d9d9;
-    padding: 40px 0;
-    margin-top: auto;
-    text-align: center;
-    border-top: 2px solid #444;
-  }
-  
-  #footer .subheader {
-    color: #e2b714;
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-  
-  /* Redes Sociales */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  background: #121212; 
+  color: #d9d9d9; 
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex; /* Flexbox para mejor distribución */
+  flex-wrap: wrap; /* Permite varias líneas */
+  justify-content: center; /* Centra elementos horizontalmente */
+  gap: 20px; /* Espaciado entre tarjetas */
+}
+
+/* Cabecera */
+#main-border {
+  background: #1a1a1a; 
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 2px solid #444; 
+}
+
+#logo h1 {
+  font-weight: bold;
+  font-size: 26px;
+  color: #e2b714; 
+  text-transform: uppercase;
+}
+
+#menu {
+  display: flex;
+  gap: 20px;
+}
+
+#menu ul {
+  display: flex;
+  gap: 15px;
+}
+
+#menu ul li {
+  list-style: none;
+}
+
+#menu ul li a {
+  color: #d9d9d9;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+#menu ul li a:hover {
+  color: #e2b714; 
+}
+
+/* Slider */
+#slider {
+  height: 220px;
+  background: linear-gradient(to right, #333, #555); /* Degradado elegante */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e2b714;
+  text-align: center;
+  padding: 20px 0; /* Espaciado adicional */
+}
+
+#slider h2 {
+  font-size: 42px;
+  color: #f3f3f3;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Subtítulos */
+.subheader {
+  font-size: 30px;
+  color: #e2b714;
+  text-align: center;
+  margin: 50px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(226, 183, 20, 0.3);
+}
+
+/* Servicios */
+.service {
+  width: 30%; /* Ancho uniforme de las tarjetas */
+  min-width: 280px; /* Tamaño mínimo para responsividad */
+  text-align: center;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.service img {
+  width: 100%; /* Ajusta las imágenes al ancho del contenedor */
+  max-width: 150px; /* Tamaño máximo */
+  height: auto; /* Mantiene la proporción */
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.service img:hover {
+  transform: scale(1.1); /* Efecto de zoom en hover */
+}
+
+.service h3 {
+  color: #e2b714;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.service p {
+  color: #bbbbbb;
+  text-align: justify;
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Videos */
+.video iframe {
+  display: block;
+  margin: 0 auto;
+  width: 100%; /* Asegura que ocupen el ancho completo */
+  max-width: 560px; /* Tamaño máximo del video */
+  border-radius: 8px;
+  border: 2px solid #e2b714;
+  margin-bottom: 15px;
+}
+
+.video p {
+  color: #bbbbbb;
+  text-align: justify;
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Footer */
+#footer {
+  background-color: #1a1a1a;
+  color: #d9d9d9;
+  padding: 40px 0;
+  margin-top: auto;
+  text-align: center;
+  border-top: 2px solid #444;
+}
+
+#footer .subheader {
+  color: #e2b714;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
 #networks {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px 0;
-    list-style: none; /* Eliminar el punto de lista */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  list-style: none;
+}
+
+#networks li {
+  transition: all 0.3s ease;
+}
+
+#networks li a {
+  color: #d9d9d9;
+  font-size: 24px;
+}
+
+#networks li:hover {
+  color: #e2b714; /* Cambio de color dorado en hover */
+  transform: scale(1.15);
+}
+
+/* Media Queries */
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 1225px) {
+  .container {
+      width: 95%;
   }
-  
-  #networks li {
-    transition: all 0.3s ease;
+}
+
+@media (max-width: 1085px) {
+  #main-header {
+      height: 70px;
+      line-height: 65px;
   }
-  
-  #networks li a {
-    color: #d9d9d9;
-    font-size: 24px;
-  }
-  
-  #networks li:hover {
-    color: #e2b714; /* Cambio de color dorado en hover */
-    transform: scale(1.15);
+}
+
+@media (max-width: 999px) {
+  #logo {
+      width: 227px;
+      float: none;
+      margin: 0 auto;
   }
 
-/*AQUÍ VAN LOS MEDIAS QUERIES*/
+  #menu {
+      float: none;
+      margin: 0 auto;
+  }
 
-/*cabecera media querys*/
-@media (max-width:1225px) {
-    .container{
-        width: 95%;
-    }
+  #slider {
+      overflow: hidden;
+      height: 150px;
+  }
+
+  #slider h2 {
+      font-size: 30px;
+      line-height: 30px;
+      margin-top: 60px;
+  }
 }
 
-@media(max-width:1085px){
-    #main-header{
-        height: 70px;
-        line-height: 65px;
-    }
+/* Ajustes para dispositivos móviles */
+@media (max-width: 700px) {
+  .service, .video {
+      width: 70%;
+      margin: 20px auto;
+  }
+
+  .service img {
+      margin-bottom: 10px;
+  }
+
+  .service p, .video p {
+      margin-top: 20px;
+  }
+
+  .video iframe {
+      width: 80%;
+      height: 230px;
+  }
 }
 
+@media (max-width: 460px) {
+  #slider h2 {
+      font-size: 25px;
+      line-height: 30px;
+      margin-top: 60px;
+  }
 
-@media(max-width:999px){
-    #logo{
-        width: 227px;
-        float: none;
-        margin: 0px auto;
-    }
-    #menu{
-        float: none;
-        margin: 0px auto;
-    }
-
-/*Estilo para el slider de la marquesina*/
-    #slider{
-        overflow: hidden;
-        height: 150px;
-    }
-    #slider h2{
-        font-size: 30px;
-        line-height: 30px;
-        margin-top: 60px;
-    }
+  .service img {
+      max-width: 120px;
+  }
 }
 
+@media (max-width: 377px) {
+  #menu {
+      width: 100%;
+      text-align: center;
+  }
 
+  #menu ul li {
+      margin-left: 4%;
+      margin-right: 4%;
+  }
 
-/*media queries para cambiar el texto de los servicios en un tamaño 180px*/
+  #slider h2 {
+      margin-top: 50px;
+  }
 
-@media(max-width: 700px){
-    .service, .video{
-        width: 70%;
-        float: none;
-        margin: 0px auto;
-        margin-top: 20px;
-        margin-bottom: 40px;
-    }
-    .service{
-        width: 50%;
-        text-align: justify;
-    }
-    .service img{
-        margin-bottom: 10px;
-    }
-    .service p, .video p{
-        margin-top: 20px;
-    }
-    .video iframe{
-        width: 80%;
-        height: 230px;
-    }
+  #slider, .video {
+      width: 90%;
+  }
+
+  .video iframe {
+      width: 80%;
+      height: 150px;
+  }
 }
 
+@media (max-width: 345px) {
+  #main-header {
+      height: auto;
+  }
 
-/*texto de la marquesina tamaño 460*/
-
-@media(max-width:460px){
-    #slider h2{
-        font-size: 25px;
-        line-height: 30px;
-        margin-top: 60px;
-    }
-}
-
-@media(max-width:377px){
-    #menu{
-        width: 100%;
-        text-align: center;
-    }
-
-    #menu ul li{
-        margin-left: 4%;
-        margin-right: 4%;
-    }
-
-    #slider h2{
-        margin-top: 50px;
-    }
-
-    #slider, .video{
-        width: 90%;
-    }
-
-    .video iframe{
-        width: 80%;
-        height: 150px;
-    }
-}
-
-
-@media (max-width:345px){
-    #main-header{
-        height: auto;
-    }
-
-    #menu ul li{
-        float: none;
-    }
+  #menu ul li {
+      float: none;
+  }
 }
